@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IIT Wala Bhaiyaa – India's No.1 Education & Career Development Brand. Home Tuition, IIT-JEE, NEET, Government Job & Skill Development Programs by Ashutosh Tripathi." />
+  <meta name="keywords" content="IIT Wala Bhaiyaa, Home Tuition, IIT JEE, NEET, Foundation Program, Bahraich, Ashutosh Tripathi, education" />
+  <title>IIT Wala Bhaiyaa | India's No.1 Education & Career Development Brand</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- Animated Particle Background -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- ==================== NAVIGATION ==================== -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-icon">IWB</div>
+        <div class="logo-text">
+          <div class="logo-text-main">IIT Wala <span>Bhaiyaa</span></div>
+          <div class="logo-text-sub">Learn · Grow · Achieve</div>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#programs">Programs</a>
+        <a href="#fees">Fee Structure</a>
+        <a href="#seminar">Seminar</a>
+        <a href="#trust">Why Us</a>
+        <a href="#merch">Merchandise</a>
+        <a href="#booking" class="nav-cta">📅 Book Free Demo</a>
+      </div>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Navigation Menu -->
+<div class="mobile-nav-menu" id="mobile-menu">
+  <a href="#programs" onclick="closeMobileMenu()">📚 Programs</a>
+  <a href="#fees" onclick="closeMobileMenu()">💰 Fee Structure</a>
+  <a href="#seminar" onclick="closeMobileMenu()">🎓 Seminar</a>
+  <a href="#trust" onclick="closeMobileMenu()">⭐ Why Us</a>
+  <a href="#merch" onclick="closeMobileMenu()">👕 Merchandise</a>
+  <a href="#booking" class="nav-cta" style="margin-top:16px;" onclick="closeMobileMenu()">📅 Book Free Demo</a>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<section id="hero">
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <!-- Left Content -->
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="star">★</span>
+          India's No.1 Education & Career Development Brand
+          <span class="star">★</span>
+        </div>
+
+        <h1 class="hero-title">
+          Welcome to
+          <span class="brand-name">IIT Wala Bhaiyaa</span>
+        </h1>
+
+        <p class="hero-tagline">From School Success to Career Success</p>
+
+        <p class="hero-desc">
+          Guided by IIT-level thinking, we bring world-class education and personalized mentorship right to your doorstep. Expert coaching from Classes 1 to 12, IIT-JEE, NEET, Government Jobs, and Skill Development.
+        </p>
+
+        <div class="hero-features">
+          <div class="hero-feature-pill"><span class="icon">🧑‍🏫</span> Expert Guidance</div>
+          <div class="hero-feature-pill"><span class="icon">💡</span> Concept Clarity</div>
+          <div class="hero-feature-pill"><span class="icon">👤</span> Personal Attention</div>
+          <div class="hero-feature-pill"><span class="icon">📝</span> Weekly Tests</div>
+          <div class="hero-feature-pill"><span class="icon">🏆</span> Proven Results</div>
+        </div>
+
+        <div class="hero-ctas">
+          <a href="#booking" class="btn-primary">
+            <i class="fa-solid fa-calendar-check"></i> Book Free Demo
+          </a>
+          <a href="#seminar" class="btn-outline">
+            <i class="fa-solid fa-video"></i> Join Free Seminar
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Founder -->
+      <div class="hero-right">
+        <div class="hero-img-container">
+          <div class="hero-img-bg"></div>
+          <div class="hero-img-ring"></div>
+          <div class="founder-name-tag">
+            <div class="fn-name">Ashutosh Tripathi</div>
+            <div class="fn-role">Founder & Director, IIT Wala Bhaiyaa</div>
+          </div>
+          <img src="images/founder.png" alt="Ashutosh Tripathi - Founder & Director, IIT Wala Bhaiyaa" class="founder-img" />
+          <div class="founder-quote-card">
+            <div class="quote-icon">💬</div>
+            "IIT Level Soch, Ab Har Student Ke Ghar Tak"
+          </div>
+          <div class="india-badge">
+            <div class="badge-no1">No.1</div>
+            <div class="badge-label">HOME TUITION<br>IN INDIA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Strip -->
+  <div class="hero-stats-strip">
+    <div class="container">
+      <div class="stats-inner">
+        <div class="stat-item">
+          <div class="stat-number" data-count="5000">0</div>
+          <div class="stat-label">Students Mentored</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="6">0</div>
+          <div class="stat-label">Unique Programs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="98">0</div>
+          <div class="stat-label">Success Rate %</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="8">0</div>
+          <div class="stat-label">Classes Covered (1–8)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PROGRAMS ==================== -->
+<section id="programs">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Our Programs</div>
+      <h2 class="section-title">Complete Education &amp; <span>Career Programs</span></h2>
+      <p class="section-subtitle">From elementary schooling to competitive exam prep and career launch — we've got you covered at every step.</p>
+    </div>
+
+    <div class="programs-grid">
+
+      <!-- Program 1: Home Tuition -->
+      <div class="program-card reveal reveal-delay-1" onclick="openModal('home-tuition')">
+        <div class="program-icon" style="background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2);">🏠</div>
+        <div class="program-label">Classes 1st to 8th</div>
+        <h3 class="program-title">Home Tuition</h3>
+        <p class="program-desc">Personalized home tuition with 1-hour daily classes, 100% personal attention and daily homework support.</p>
+        <div class="program-points">
+          <div class="program-point">All Subjects Covered</div>
+          <div class="program-point">1 Hour Daily Classes</div>
+          <div class="program-point">100% Personal Attention</div>
+          <div class="program-point">Weekly Tests & Progress Reports</div>
+        </div>
+        <div class="program-cta">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <!-- Program 2: Foundation -->
+      <div class="program-card reveal reveal-delay-2" onclick="openModal('foundation')">
+        <div class="program-icon" style="background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.2);">📚</div>
+        <div class="program-label">Class 6th to 10th</div>
+        <h3 class="program-title">Foundation Program</h3>
+        <p class="program-desc">Build a rock-solid academic foundation with Olympiad prep and future IIT-JEE/NEET base.</p>
+        <div class="program-points">
+          <div class="program-point">Strong Concept Building</div>
+          <div class="program-point">Olympiad Preparation</div>
+          <div class="program-point">NTSE Foundation</div>
+          <div class="program-point">Future IIT-JEE & NEET Base</div>
+        </div>
+        <div class="program-cta">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <!-- Program 3: IIT-JEE -->
+      <div class="program-card reveal reveal-delay-3" onclick="openModal('iit-jee')">
+        <div class="program-icon" style="background:rgba(255,71,87,0.1);border:1px solid rgba(255,71,87,0.2);">⚛️</div>
+        <div class="program-label">Engineering Track</div>
+        <h3 class="program-title">IIT-JEE Foundation</h3>
+        <p class="program-desc">Rigorous coaching in Mathematics, Physics, Chemistry with problem-solving and analytical thinking.</p>
+        <div class="program-points">
+          <div class="program-point">Mathematics & Physics</div>
+          <div class="program-point">Chemistry Mastery</div>
+          <div class="program-point">Problem Solving Skills</div>
+          <div class="program-point">Analytical Thinking</div>
+        </div>
+        <div class="program-cta">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <!-- Program 4: NEET -->
+      <div class="program-card reveal reveal-delay-4" onclick="openModal('neet')">
+        <div class="program-icon" style="background:rgba(0,230,118,0.1);border:1px solid rgba(0,230,118,0.2);">🩺</div>
+        <div class="program-label">Medical Track</div>
+        <h3 class="program-title">NEET Foundation</h3>
+        <p class="program-desc">Comprehensive Biology, Physics, Chemistry preparation with exam-oriented strategy for medical aspirants.</p>
+        <div class="program-points">
+          <div class="program-point">Biology & Physics</div>
+          <div class="program-point">Chemistry Fundamentals</div>
+          <div class="program-point">Concept Clarity</div>
+          <div class="program-point">Exam-Oriented Strategy</div>
+        </div>
+        <div class="program-cta">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <!-- Program 5: Government Jobs -->
+      <div class="program-card reveal reveal-delay-5" onclick="openModal('govt-job')">
+        <div class="program-icon" style="background:rgba(255,165,0,0.1);border:1px solid rgba(255,165,0,0.2);">🏛️</div>
+        <div class="program-label">Government Exams</div>
+        <h3 class="program-title">Government Job Foundation</h3>
+        <p class="program-desc">Prepare for SSC, Banking, Railways and other government exams with comprehensive guidance.</p>
+        <div class="program-points">
+          <div class="program-point">SSC Foundation</div>
+          <div class="program-point">Banking Awareness</div>
+          <div class="program-point">Railway Exams Foundation</div>
+          <div class="program-point">Reasoning & Aptitude</div>
+        </div>
+        <div class="program-cta">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <!-- Program 6: Skill Development -->
+      <div class="program-card reveal reveal-delay-1" onclick="openModal('skill-dev')">
+        <div class="program-icon" style="background:rgba(138,43,226,0.1);border:1px solid rgba(138,43,226,0.2);">🧠</div>
+        <div class="program-label">Personality & Skills</div>
+        <h3 class="program-title">Skill Development & Personality</h3>
+        <p class="program-desc">Develop communication, leadership, and smart study techniques for holistic personal growth.</p>
+        <div class="program-points">
+          <div class="program-point">Communication Skills</div>
+          <div class="program-point">Personality Development</div>
+          <div class="program-point">Smart Study Techniques</div>
+          <div class="program-point">Leadership Quality</div>
+        </div>
+        <div class="program-cta">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FEE STRUCTURE ==================== -->
+<section id="fees">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Transparent Pricing</div>
+      <h2 class="section-title">Home Tuition <span>Fee Structure</span></h2>
+      <p class="section-subtitle">Affordable, transparent pricing with exclusive discounts for siblings. Use our interactive calculator below!</p>
+    </div>
+
+    <div class="fees-grid">
+      <!-- Fee Table -->
+      <div class="reveal reveal-delay-1">
+        <div class="fee-table-wrap">
+          <div class="fee-table-header">
+            <i class="fa-solid fa-indian-rupee-sign" style="font-size:1.3rem; color:var(--navy-900);"></i>
+            <h3>Monthly Fee Chart</h3>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Monthly Fee</th>
+                <th>Sibling Discount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Class 1–2</td><td>₹1,500</td><td>₹1,300</td></tr>
+              <tr><td>Class 3–4</td><td>₹1,800</td><td>₹1,600</td></tr>
+              <tr><td>Class 5</td><td>₹2,000</td><td>₹1,800</td></tr>
+              <tr><td>Class 6</td><td>₹2,500</td><td>₹2,200</td></tr>
+              <tr><td>Class 7</td><td>₹2,800</td><td>₹2,500</td></tr>
+              <tr><td>Class 8</td><td>₹3,000</td><td>₹2,700</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Special Offers -->
+        <div style="margin-top:20px; display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <div class="glass-card" style="padding:20px; text-align:center;">
+            <div style="font-size:2rem; margin-bottom:8px;">👨‍👩‍👦</div>
+            <div style="font-weight:700; color:var(--gold-300); font-size:1rem; margin-bottom:4px;">2 Siblings Discount</div>
+            <div style="font-size:0.85rem; color:var(--text-secondary);">Special reduced fee for 2 siblings</div>
+          </div>
+          <div class="glass-card" style="padding:20px; text-align:center;">
+            <div style="font-size:2rem; margin-bottom:8px;">👨‍👩‍👧‍👦</div>
+            <div style="font-weight:700; color:var(--gold-300); font-size:1rem; margin-bottom:4px;">3+ Siblings Discount</div>
+            <div style="font-size:0.85rem; color:var(--text-secondary);">Extra exclusive discount for 3 or more siblings — ask for details!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calculator -->
+      <div class="reveal reveal-delay-2">
+        <div class="calculator-card">
+          <div class="calc-header">
+            <h3>🧮 Sibling Fee Calculator</h3>
+            <p>Add your children's classes to calculate your total monthly fee including sibling discounts.</p>
+          </div>
+          <div class="calc-body">
+            <div id="siblings-container">
+              <!-- Sibling rows injected by JS -->
+            </div>
+            <button class="btn-add-sibling" id="btn-add-sibling">
+              <i class="fa-solid fa-plus"></i> Add Another Child
+            </button>
+            <div class="calc-result" id="calc-result">
+              <div class="calc-result-row">
+                <span class="cr-label">Subtotal (Standard)</span>
+                <span class="cr-value" id="calc-subtotal">₹0</span>
+              </div>
+              <div class="calc-result-row discount">
+                <span class="cr-label" id="calc-discount-label">Sibling Discount</span>
+                <span class="cr-value" id="calc-discount">- ₹0</span>
+              </div>
+              <div class="calc-result-row total">
+                <span class="cr-label">Monthly Total</span>
+                <span class="cr-value" id="calc-total">₹0</span>
+              </div>
+            </div>
+            <div id="calc-note" style="font-size:0.8rem; color:var(--text-muted); margin-top:12px; text-align:center;"></div>
+            <a href="tel:9873996314" class="btn-primary" style="display:flex; justify-content:center; margin-top:20px; width:100%;">
+              <i class="fa-solid fa-phone"></i> Call for More Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SEMINAR & CERTIFICATE ==================== -->
+<section id="seminar">
+  <div class="container">
+    <div class="reveal" style="text-align:center; margin-bottom:56px;">
+      <div class="section-tag">🎓 Free Event</div>
+      <h2 class="section-title">Grand Free Online <span>Career Seminar 2026</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">Register now and get your personalized Certificate of Participation instantly!</p>
+    </div>
+
+    <div class="seminar-inner">
+      <!-- Seminar Info -->
+      <div class="seminar-info-card reveal reveal-delay-1">
+        <div class="free-badge"><i class="fa-solid fa-circle-check"></i> 100% FREE Registration</div>
+
+        <div class="seminar-date-badges">
+          <div class="date-badge"><i class="fa-solid fa-calendar-days"></i> 28 June 2026 (Sunday)</div>
+          <div class="date-badge"><i class="fa-solid fa-clock"></i> 11:00 AM Onwards</div>
+          <div class="date-badge"><i class="fa-solid fa-video"></i> Live on Zoom</div>
+        </div>
+
+        <h3 class="seminar-title">Career & Education <span>Seminar 2026</span></h3>
+        <p class="seminar-subtitle">Organized by IIT Wala Bhaiyaa | Presented by Ashutosh Tripathi</p>
+
+        <div class="seminar-perks">
+          <div class="seminar-perk"><span class="seminar-perk-icon">📜</span> Participation Certificate</div>
+          <div class="seminar-perk"><span class="seminar-perk-icon">🗺️</span> Career Roadmap PDF</div>
+          <div class="seminar-perk"><span class="seminar-perk-icon">🎓</span> Scholarship Information</div>
+          <div class="seminar-perk"><span class="seminar-perk-icon">👨‍👩‍👧</span> Parent Guidance Session</div>
+          <div class="seminar-perk"><span class="seminar-perk-icon">▶️</span> Seminar Recording Access</div>
+          <div class="seminar-perk"><span class="seminar-perk-icon">💬</span> Q&amp;A with Mentor</div>
+        </div>
+
+        <blockquote style="font-style:italic; color:var(--gold-200); font-size:1rem; border-left:3px solid var(--gold-500); padding-left:16px; line-height:1.6;">
+          "The Right Guidance Today, Bright Future Tomorrow!"
+        </blockquote>
+      </div>
+
+      <!-- Registration Form + Certificate -->
+      <div class="reveal reveal-delay-2">
+        <div class="reg-form-card" id="reg-form-card">
+          <h3>🎓 Register Now</h3>
+          <p>Get your personalized participation certificate instantly after registering!</p>
+
+          <form id="seminar-form" onsubmit="handleSeminarReg(event)">
+            <div class="form-group">
+              <label for="reg-name">Student's Full Name *</label>
+              <input type="text" id="reg-name" placeholder="e.g. Rahul Kumar Sharma" required />
+            </div>
+            <div class="form-group">
+              <label for="reg-class">Class / Grade *</label>
+              <select id="reg-class" required>
+                <option value="">Select Class</option>
+                <option>Class 6</option><option>Class 7</option><option>Class 8</option>
+                <option>Class 9</option><option>Class 10</option><option>Class 11</option>
+                <option>Class 12</option><option>Appearing for JEE/NEET</option>
+                <option>Government Job Aspirant</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="reg-phone">Parent's WhatsApp Number *</label>
+              <input type="tel" id="reg-phone" placeholder="e.g. 9873996314" maxlength="10" required />
+            </div>
+            <div class="form-group">
+              <label for="reg-city">City *</label>
+              <input type="text" id="reg-city" placeholder="e.g. Bahraich" required />
+            </div>
+            <button type="submit" class="btn-register" id="btn-register">
+              <i class="fa-solid fa-paper-plane"></i> Register & Get Certificate
+            </button>
+          </form>
+
+          <!-- Certificate Preview -->
+          <div class="certificate-preview-wrap" id="cert-preview">
+            <p style="font-size:0.85rem; color:var(--gold-300); font-weight:600; margin:20px 0 10px; text-align:center;">
+              🎉 Your Certificate is Ready!
+            </p>
+            <canvas id="cert-canvas" width="900" height="640"></canvas>
+            <button class="btn-download-cert" id="btn-download-cert" onclick="downloadCertificate()">
+              <i class="fa-solid fa-download"></i> Download Your Certificate
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHY TRUST US ==================== -->
+<section id="trust">
+  <div class="container">
+    <div class="reveal" style="text-align:center; margin-bottom:56px;">
+      <div class="section-tag">Trusted by Thousands</div>
+      <h2 class="section-title">Why Parents <span>Trust Us?</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">We don't just teach — we mentor, guide, and transform students into confident achievers.</p>
+    </div>
+
+    <div class="trust-grid">
+      <div class="trust-card reveal reveal-delay-1">
+        <div class="trust-icon">👤</div>
+        <h4>Personalized Learning</h4>
+        <p>Every student gets a custom learning plan tailored to their pace and learning style.</p>
+      </div>
+      <div class="trust-card reveal reveal-delay-2">
+        <div class="trust-icon">💡</div>
+        <h4>Concept-Based Teaching</h4>
+        <p>We focus on deep understanding, not rote memorization — building lasting knowledge.</p>
+      </div>
+      <div class="trust-card reveal reveal-delay-3">
+        <div class="trust-icon">📊</div>
+        <h4>Regular Progress Tracking</h4>
+        <p>Weekly tests and detailed progress reports keep parents informed at every step.</p>
+      </div>
+      <div class="trust-card reveal reveal-delay-4">
+        <div class="trust-icon">💸</div>
+        <h4>Affordable Fee Structure</h4>
+        <p>World-class education at transparent, affordable pricing with special sibling discounts.</p>
+      </div>
+      <div class="trust-card reveal reveal-delay-1">
+        <div class="trust-icon">🏅</div>
+        <h4>Experienced Mentorship</h4>
+        <p>Led by an IIT-level thinker, Ashutosh Tripathi, with years of teaching excellence.</p>
+      </div>
+      <div class="trust-card reveal reveal-delay-2">
+        <div class="trust-icon">🎯</div>
+        <h4>Student-Centric Approach</h4>
+        <p>The student's goal is our goal — every decision is made with their success in mind.</p>
+      </div>
+      <div class="trust-card reveal reveal-delay-3">
+        <div class="trust-icon">📈</div>
+        <h4>Focus on Long-Term Success</h4>
+        <p>Beyond grades — we build life skills, career clarity, and a growth mindset.</p>
+      </div>
+      <div class="trust-card reveal reveal-delay-4">
+        <div class="trust-icon">🏠</div>
+        <h4>Safe & Comfortable Learning</h4>
+        <p>A nurturing, home-based environment where students feel secure to ask and explore.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== MERCHANDISE ==================== -->
+<section id="merch">
+  <div class="container">
+    <div class="reveal" style="text-align:center; margin-bottom:56px;">
+      <div class="section-tag">Official Merchandise</div>
+      <h2 class="section-title">Wear the <span>IWB Spirit</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">Dream. Believe. Achieve. — Show your IWB pride with our official branded collection.</p>
+    </div>
+
+    <div class="merch-grid">
+      <!-- Product 1 -->
+      <div class="merch-card reveal reveal-delay-1">
+        <div class="merch-img-wrap">
+          <img src="images/merch_blue_tshirt.png" alt="IWB Motivational T-Shirt - Dream Believe Achieve" id="merch-img-1" onerror="this.src='data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'280\'><rect fill=\'%2300205b\' width=\'400\' height=\'280\'/><text x=\'200\' y=\'120\' text-anchor=\'middle\' fill=\'%23ffd700\' font-size=\'28\' font-weight=\'bold\'>IWB</text><text x=\'200\' y=\'160\' text-anchor=\'middle\' fill=\'%23fff\' font-size=\'16\'>DREAM. BELIEVE. ACHIEVE.</text></svg>'" />
+          <div class="merch-tag">BESTSELLER</div>
+        </div>
+        <div class="merch-body">
+          <h3>IWB Motivational T-Shirt</h3>
+          <p>Sky-blue premium cotton tee with the iconic "Dream. Believe. Achieve." print — the perfect study companion and motivational wear!</p>
+          <div class="merch-size-selector">
+            <button class="size-btn active" onclick="selectSize(this, 1)">S</button>
+            <button class="size-btn" onclick="selectSize(this, 1)">M</button>
+            <button class="size-btn" onclick="selectSize(this, 1)">L</button>
+            <button class="size-btn" onclick="selectSize(this, 1)">XL</button>
+            <button class="size-btn" onclick="selectSize(this, 1)">XXL</button>
+          </div>
+          <div class="merch-footer">
+            <div class="merch-price">₹599 <span>/ piece</span></div>
+            <button class="btn-enquire" onclick="enquireMerch('IWB Motivational T-Shirt')">
+              <i class="fa-brands fa-whatsapp"></i> Enquire
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="merch-card reveal reveal-delay-2">
+        <div class="merch-img-wrap">
+          <img src="images/merch_polo.png" alt="IWB Navy Polo T-Shirt" id="merch-img-2" onerror="this.src='data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'280\'><rect fill=\'%2300091f\' width=\'400\' height=\'280\'/><text x=\'200\' y=\'120\' text-anchor=\'middle\' fill=\'%23d4af37\' font-size=\'28\' font-weight=\'bold\'>IWB POLO</text><text x=\'200\' y=\'160\' text-anchor=\'middle\' fill=\'%23fff\' font-size=\'14\'>IIT Wala Bhaiyaa</text></svg>'" />
+          <div class="merch-tag" style="background:linear-gradient(135deg,#1a1a1a,#333); color:#d4af37; border:1px solid #d4af37;">PREMIUM</div>
+        </div>
+        <div class="merch-body">
+          <h3>IWB Premium Polo Shirt</h3>
+          <p>Navy blue premium polo with gold IWB embroidered logo — elegant, professional and perfect for IWB events and daily wear.</p>
+          <div class="merch-size-selector">
+            <button class="size-btn active" onclick="selectSize(this, 2)">S</button>
+            <button class="size-btn" onclick="selectSize(this, 2)">M</button>
+            <button class="size-btn" onclick="selectSize(this, 2)">L</button>
+            <button class="size-btn" onclick="selectSize(this, 2)">XL</button>
+            <button class="size-btn" onclick="selectSize(this, 2)">XXL</button>
+          </div>
+          <div class="merch-footer">
+            <div class="merch-price">₹899 <span>/ piece</span></div>
+            <button class="btn-enquire" onclick="enquireMerch('IWB Premium Polo Shirt')">
+              <i class="fa-brands fa-whatsapp"></i> Enquire
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="https://wa.me/919873996314?text=Hi%20IIT%20Wala%20Bhaiyaa%2C%20I%20want%20to%20enquire%20about%20merchandise!" target="_blank" class="btn-primary" style="display:inline-flex;">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp for All Merch Details
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== BOOKING ==================== -->
+<section id="booking">
+  <div class="container">
+    <div class="booking-inner">
+      <div class="booking-left reveal">
+        <div class="section-tag">Limited Seats</div>
+        <h2 class="section-title">Book Your <span>FREE Demo Session</span> Today!</h2>
+        <p>Experience IWB's unique teaching methodology firsthand. No obligations, no fees — just pure learning that will amaze you!</p>
+        <div class="booking-highlights">
+          <div class="booking-highlight">
+            <span class="bh-icon">✅</span>
+            <span>100% Free — Zero Commitment Required</span>
+          </div>
+          <div class="booking-highlight">
+            <span class="bh-icon">⚡</span>
+            <span>Instant Confirmation via WhatsApp</span>
+          </div>
+          <div class="booking-highlight">
+            <span class="bh-icon">🧑‍🏫</span>
+            <span>Taught by Ashutosh Tripathi Personally</span>
+          </div>
+          <div class="booking-highlight">
+            <span class="bh-icon">🔒</span>
+            <span>Limited Seats — Book Now to Secure Yours</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <div class="booking-form-card">
+          <h3>📅 Book Free Demo</h3>
+          <div class="limited-badge">⚠️ LIMITED SEATS AVAILABLE</div>
+
+          <div id="booking-form-wrap">
+            <form id="booking-form" onsubmit="handleBooking(event)">
+              <div class="form-group">
+                <label for="book-name">Parent's Name *</label>
+                <input type="text" id="book-name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="book-phone">WhatsApp Number *</label>
+                <input type="tel" id="book-phone" placeholder="10-digit mobile number" maxlength="10" required />
+              </div>
+              <div class="form-group">
+                <label for="book-student">Student's Name *</label>
+                <input type="text" id="book-student" placeholder="Student's full name" required />
+              </div>
+              <div class="form-group">
+                <label for="book-class">Student's Class *</label>
+                <select id="book-class" required>
+                  <option value="">Select Class</option>
+                  <option>Class 1</option><option>Class 2</option><option>Class 3</option>
+                  <option>Class 4</option><option>Class 5</option><option>Class 6</option>
+                  <option>Class 7</option><option>Class 8</option><option>Class 9</option>
+                  <option>Class 10</option><option>Class 11</option><option>Class 12</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="book-subject">Subject of Interest *</label>
+                <select id="book-subject" required>
+                  <option value="">Select Subject / Program</option>
+                  <option>All Subjects (Home Tuition)</option>
+                  <option>Mathematics</option><option>Science</option>
+                  <option>IIT-JEE Preparation</option><option>NEET Preparation</option>
+                  <option>Government Job Foundation</option>
+                  <option>Skill Development</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-register">
+                <i class="fa-solid fa-rocket"></i> Book My Free Demo Now!
+              </button>
+            </form>
+          </div>
+
+          <div class="booking-success" id="booking-success">
+            <div class="success-icon">🎉</div>
+            <h3>Demo Booked Successfully!</h3>
+            <p>Thank you! Our team will contact you on WhatsApp within 24 hours to confirm your FREE Demo Session slot.</p>
+            <a href="https://wa.me/919873996314?text=Hi%2C%20I%20just%20booked%20a%20free%20demo%20on%20your%20website!" target="_blank" class="btn-primary" style="display:inline-flex; margin-top:20px;">
+              <i class="fa-brands fa-whatsapp"></i> Message on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo nav-logo" style="margin-bottom:16px;">
+          <div class="logo-icon">IWB</div>
+          <div class="logo-text">
+            <div class="logo-text-main">IIT Wala <span>Bhaiyaa</span></div>
+            <div class="logo-text-sub">India's No.1 Education Brand</div>
+          </div>
+        </div>
+        <p class="footer-brand-desc">From School Success to Career Success. IIT Level Soch, Ab Har Student Ke Ghar Tak. Transforming lives through quality education since 2020.</p>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@iitwalabhaiyaa" target="_blank" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/iitwalabhaiyaa.official/" target="_blank" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/919873996314" target="_blank" class="social-link" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="tel:9873996314" class="social-link" title="Call"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="#programs">Home Tuition</a></li>
+          <li><a href="#programs">Foundation Program</a></li>
+          <li><a href="#programs">IIT-JEE Foundation</a></li>
+          <li><a href="#programs">NEET Foundation</a></li>
+          <li><a href="#programs">Government Job</a></li>
+          <li><a href="#programs">Skill Development</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#fees">Fee Structure</a></li>
+          <li><a href="#seminar">Free Seminar</a></li>
+          <li><a href="#trust">Why Choose Us</a></li>
+          <li><a href="#merch">Merchandise</a></li>
+          <li><a href="#booking">Book Free Demo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone ci-icon"></i>
+          <a href="tel:9873996314">9873996314</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-brands fa-whatsapp ci-icon"></i>
+          <a href="https://wa.me/919873996314" target="_blank">WhatsApp Us</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot ci-icon"></i>
+          <span>Police Line, Bahraich – 271801</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-brands fa-youtube ci-icon"></i>
+          <a href="https://www.youtube.com/@iitwalabhaiyaa" target="_blank">IWB by Ashutosh Tripathi</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-brands fa-instagram ci-icon"></i>
+          <a href="https://www.instagram.com/iitwalabhaiyaa.official/" target="_blank">@iitwalabhaiyaa.official</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 IIT Wala Bhaiyaa. All rights reserved.</span>
+      <span style="color:var(--gold-300);">Dream. Believe. Achieve. 🌟</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== PROGRAM MODAL ==================== -->
+<div class="modal-overlay" id="program-modal" onclick="closeModalOutside(event)">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="modal-header-left">
+        <div class="modal-icon" id="modal-icon"></div>
+        <div>
+          <div class="modal-title" id="modal-title"></div>
+          <div class="modal-subtitle" id="modal-subtitle"></div>
+        </div>
+      </div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <h4>📋 Program Overview</h4>
+      <div class="modal-points" id="modal-points"></div>
+      <div class="modal-cta">
+        <a href="#booking" class="btn-primary" onclick="closeModal()">
+          <i class="fa-solid fa-calendar-check"></i> Book Free Demo
+        </a>
+        <a href="tel:9873996314" class="btn-outline">
+          <i class="fa-solid fa-phone"></i> Call Now
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Container -->
+<div class="toast-container" id="toast-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
