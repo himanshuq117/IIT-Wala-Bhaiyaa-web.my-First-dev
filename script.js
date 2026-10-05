@@ -364,6 +364,19 @@ addSiblingRow();
 // ==========================================
 // SEMINAR REGISTRATION & CERTIFICATE GENERATOR
 // ==========================================
+// ==========================================
+// NETLIFY FORMS SUBMISSION
+// ==========================================
+function submitNetlifyForm(form) {
+  return fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(new FormData(form)).toString(),
+  }).then(res => {
+    if (!res.ok) throw new Error('Submission failed');
+  });
+}
+
 function handleSeminarReg(e) {
   e.preventDefault();
   const name = document.getElementById('reg-name').value.trim();
@@ -384,14 +397,18 @@ function handleSeminarReg(e) {
   btn.disabled = true;
   btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Generating Certificate...';
 
-  setTimeout(() => {
+  submitNetlifyForm(e.target).then(() => {
     generateCertificate(name, cls);
     document.getElementById('cert-preview').classList.add('active');
     btn.disabled = false;
     btn.innerHTML = '<i class="fa-solid fa-check"></i> Registered Successfully!';
     btn.style.background = 'linear-gradient(135deg, #00e676, #00c853)';
     showToast(`Welcome ${name}! Your certificate is ready to download! 🎓`, 'success');
-  }, 1500);
+  }).catch(() => {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Register & Get Certificate';
+    showToast('Registration failed. Please try again or message us on WhatsApp.', 'error');
+  });
 }
 
 function generateCertificate(studentName, studentClass) {
@@ -719,11 +736,15 @@ function handleBooking(e) {
   submitBtn.disabled = true;
   submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Booking...';
 
-  setTimeout(() => {
+  submitNetlifyForm(e.target).then(() => {
     document.getElementById('booking-form-wrap').style.display = 'none';
     document.getElementById('booking-success').classList.add('active');
     showToast(`Demo booked for ${student}! Our team will contact ${name} on WhatsApp. 🎉`, 'success');
-  }, 1500);
+  }).catch(() => {
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = '<i class="fa-solid fa-rocket"></i> Book My Free Demo Now!';
+    showToast('Booking failed. Please try again or message us on WhatsApp.', 'error');
+  });
 }
 
 // ==========================================
