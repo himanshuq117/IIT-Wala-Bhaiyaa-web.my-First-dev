@@ -385,14 +385,16 @@
           <h3>🎓 Register Now</h3>
           <p>Get your personalized participation certificate instantly after registering!</p>
 
-          <form id="seminar-form" onsubmit="handleSeminarReg(event)">
+          <form id="seminar-form" name="seminar-registration" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSeminarReg(event)">
+            <input type="hidden" name="form-name" value="seminar-registration" />
+            <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
             <div class="form-group">
               <label for="reg-name">Student's Full Name *</label>
-              <input type="text" id="reg-name" placeholder="e.g. Rahul Kumar Sharma" required />
+              <input type="text" id="reg-name" name="student_name" placeholder="e.g. Rahul Kumar Sharma" required />
             </div>
             <div class="form-group">
               <label for="reg-class">Class / Grade *</label>
-              <select id="reg-class" required>
+              <select id="reg-class" name="class" required>
                 <option value="">Select Class</option>
                 <option>Class 6</option><option>Class 7</option><option>Class 8</option>
                 <option>Class 9</option><option>Class 10</option><option>Class 11</option>
@@ -402,11 +404,11 @@
             </div>
             <div class="form-group">
               <label for="reg-phone">Parent's WhatsApp Number *</label>
-              <input type="tel" id="reg-phone" placeholder="e.g. 9873996314" maxlength="10" required />
+              <input type="tel" id="reg-phone" name="whatsapp" placeholder="e.g. 9873996314" maxlength="10" required />
             </div>
             <div class="form-group">
               <label for="reg-city">City *</label>
-              <input type="text" id="reg-city" placeholder="e.g. Bahraich" required />
+              <input type="text" id="reg-city" name="city" placeholder="e.g. Bahraich" required />
             </div>
             <button type="submit" class="btn-register" id="btn-register">
               <i class="fa-solid fa-paper-plane"></i> Register & Get Certificate
@@ -586,22 +588,24 @@
           <div class="limited-badge">⚠️ LIMITED SEATS AVAILABLE</div>
 
           <div id="booking-form-wrap">
-            <form id="booking-form" onsubmit="handleBooking(event)">
+            <form id="booking-form" name="demo-booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleBooking(event)">
+              <input type="hidden" name="form-name" value="demo-booking" />
+            <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
               <div class="form-group">
                 <label for="book-name">Parent's Name *</label>
-                <input type="text" id="book-name" placeholder="Your full name" required />
+                <input type="text" id="book-name" name="parent_name" placeholder="Your full name" required />
               </div>
               <div class="form-group">
                 <label for="book-phone">WhatsApp Number *</label>
-                <input type="tel" id="book-phone" placeholder="10-digit mobile number" maxlength="10" required />
+                <input type="tel" id="book-phone" name="whatsapp" placeholder="10-digit mobile number" maxlength="10" required />
               </div>
               <div class="form-group">
                 <label for="book-student">Student's Name *</label>
-                <input type="text" id="book-student" placeholder="Student's full name" required />
+                <input type="text" id="book-student" name="student_name" placeholder="Student's full name" required />
               </div>
               <div class="form-group">
                 <label for="book-class">Student's Class *</label>
-                <select id="book-class" required>
+                <select id="book-class" name="class" required>
                   <option value="">Select Class</option>
                   <option>Class 1</option><option>Class 2</option><option>Class 3</option>
                   <option>Class 4</option><option>Class 5</option><option>Class 6</option>
@@ -611,7 +615,7 @@
               </div>
               <div class="form-group">
                 <label for="book-subject">Subject of Interest *</label>
-                <select id="book-subject" required>
+                <select id="book-subject" name="subject" required>
                   <option value="">Select Subject / Program</option>
                   <option>All Subjects (Home Tuition)</option>
                   <option>Mathematics</option><option>Science</option>
